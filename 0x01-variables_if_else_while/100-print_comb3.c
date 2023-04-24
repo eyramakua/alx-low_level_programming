@@ -8,7 +8,7 @@ int main(void)
 {
 	int code, max;
 
-	for (code = 0; max < 9; code++)
+	for (code = 0; code < 9; code++)
 	{
 		for (max = code + 1; max < 10; max++)
 		{
