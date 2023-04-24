@@ -9,12 +9,17 @@
 
 int main(void)
 {
-	char c;
+	/*declare a variable*/
+	char alphabet;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	for (c = 'a'; c <= 'z'; c++)
-	putchar (c)
+
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+		/*print the value of the variable*/
+		putchar (alphabet);
+	}
 	putchar ('\n');
 	return (0);
 }
