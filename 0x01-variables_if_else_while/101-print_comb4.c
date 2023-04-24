@@ -3,11 +3,11 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return:Always 0 (Success)
  */
 int main(void)
 {
-	int ab, ac, ad
+	int ab, ac, ad;
 
 	for (ab = 0; ab <= 7; ab++)
 	{
