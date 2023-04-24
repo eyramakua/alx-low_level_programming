@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -11,9 +9,6 @@ int main(void)
 {
 	/*declare a variable*/
 	char alphabet;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
 
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
