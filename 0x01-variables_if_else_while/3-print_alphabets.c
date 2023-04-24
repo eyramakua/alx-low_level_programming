@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints alphabets in lower and upper case
- * Return: Always (Success)
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -13,6 +13,7 @@ int main(void)
 		putchar(c);
 	for (c = 'A'; c <= 'Z'; c++)
 		putchar(c);
-	putchar('\n')
+	putchar('\n');
+
 	return (0);
 }
