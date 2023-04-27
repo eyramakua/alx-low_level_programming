@@ -7,15 +7,15 @@
 int main(void)
 {
 	int i = 0;
-	long a = 1, c = 2, sum = c;
+	long j = 1, k = 2, sum = k;
 
-	while (c + a < 4000000)
+	while (k + j < 4000000)
 	{
-		c += a;
-	if (c % 2 == 0)
-		sum += c;
-		a = c - a;
-		++i;
+	k += j;
+	if (k % 2 == 0)
+	sum += k;
+	j = k - j;
+	++i;
 	}
 	printf("%ld\n", sum);
 	return (0);
