@@ -1,32 +1,30 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * *cap_string - Capitilizes all words of a string
+ * *cap_string - Capitalizes all words of a string
  *
- * @str: string to be capitilized
+ * @str: string to be capitalized
  *
  * Return: Capitalized string
  */
 char *cap_string(char *str)
 {
-	int c, d;
-	char seps[] = "\t\n,;' '.!?\"(){}";
+	int a, b;
+	char seps[] = "\t\n,; ' ' .!?\"(){}";
 
 	if (str[0] >= 'a' && str[0] <= 'z')
 	{
 		str[0] -= 32;
 	}
-	for (c = 1; str[c] != '\0'; c++)
+	for (a = 1; str[a] != '\0'; a++)
 	{
-		for (d = 0; seps[d] != '\0'; d++)
+		for (b = 0; seps[b] != '\0'; b++)
 		{
-			if (str[c - 1] == seps[d] && str[c] >= 'c' && str[c] <= 'z')
+			if (str[a - 1] == seps[b] && str[a] >= 'a' && str[a] <= 'z')
 			{
-				str[c] -= 32;
+				str[a] -= 32;
 			}
 		}
 	}
 	return (str);
 }
-
