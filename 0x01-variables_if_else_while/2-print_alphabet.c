@@ -7,15 +7,13 @@
 
 int main(void)
 {
-	/*declare a variable*/
-	char alphabet;
+	char c = 'a';
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	while (c <= 'z')
 	{
-		/*print the value of the variable*/
-		putchar (alphabet);
+		_putchar(c);
+		c++
 	}
 	putchar ('\n');
 	return (0);
 }
-
