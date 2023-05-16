@@ -2,20 +2,19 @@
 #include <stdlib.h>
 
 /**
- * free_grid - allocates a grid, make space and free space
+ * free_grid - frees the memory allocate for the grid
  *
- * @grid: takes in width of grid
+ * @grid: grid to free
  * @height: height of grid
- *
- * Return: free grid
  */
 void free_grid(int **grid, int height)
 {
 	int i;
 
+	if (grid == NULL || height == 0)
+		return;
 	for (i = 0; i < height; i++)
-	{
-		return free(grid[i]);
-	}
-	return free(grid);
+		free(grid[i]);
+
+	free(grid);
 }
