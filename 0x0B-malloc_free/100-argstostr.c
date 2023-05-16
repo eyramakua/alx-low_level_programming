@@ -16,17 +16,23 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	for (a = 0; a < ac; a++)
+	while (a < ac)
 	{
-		for (b = 0; av[a][b] != '\0'; b++)
+		b = 0;
+		while (av[a][b] != '\0')
+		{
 			gen++;
-		gen++;
+			b++;
+		}
+		a++;
 	}
-	str = malloc(sizeof(char) * (gen + 1));
-
+	gen = gen + ac + 1;
+	str = malloc(sizeof(char) * gen);
 	if (str == NULL)
+	{
 		return (NULL);
-	c = 0;
+	}
+
 	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b] != '\0'; b++)
