@@ -9,14 +9,11 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t find_node;
+	size_t track_nodes;
 
-	for (find_nodes = 0; h != NULL h = h->next, find_nodes++)
+	for (track_nodes = 0; h != NULL; h = h->next, track_nodes++)
 	{
-		if (h->next)
-		{
-			printf("next++\n");
-		}
+		printf("%d\n", h->n);
 	}
-	return (find_nodes);
+	return (track_nodes);
 }
