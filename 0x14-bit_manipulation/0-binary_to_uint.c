@@ -9,27 +9,16 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum;
-	int gen, jen;
+	unsigned int decimal = 0;
+	int d;
 
 	if (!b)
 		return (0);
-
-	sum = 0;
-
-	for (gen = 0; b[gen] != '\0'; gen++)
-
-	for (gen--, jen = 1; gen >= 0; gen--, jen *= 2)
+	for (d = 0; b[d]; d++)
 	{
-		if (b[gen] != '0' && b[gen] != '1')
-		{
-			return (0);
-		}
-
-		if (b[gen] & 1)
-		{
-			sum += jen;
-		}
+		if (b[d] < '0' || b[d] > '1')
+		return (0);
+		decimal = 2 * decimal + (b[d] - '0');
 	}
-	return (sum);
+	return (decimal);
 }
