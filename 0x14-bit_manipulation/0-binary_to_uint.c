@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[gen] != '0' && b[gen] != '1')
 		{
 			return (0);
-			}
+		}
 
 		if (b[gen] & 1)
 		{
